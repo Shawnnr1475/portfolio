@@ -234,3 +234,29 @@ span{
   width: 100vw;
   height: 100vh;
 }
+
+
+@media screen and (max-width:500px) {
+  
+.cards{
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.intro h2{
+  font-size: 30px;
+}
+
+.sec2-container{
+  font-size: 20px;
+  width: 80%;
+  text-align: center;
+}
+
+.projects{
+  justify-content: start;
+}
+
+.section{
+  padding: 2rem;
+}
+
+}
