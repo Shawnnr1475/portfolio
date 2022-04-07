@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="styles.css"></link>
     <link rel="stylesheet" href="about.css"></link>
     <script defer src="scripts.js"></script>
+    <script defer>
+        function showMenu(menu) {
+            menu.classList.toggle("clicked")
+        }
+    </script>
 </head>
 <body>
     <div class="page-container">
@@ -16,6 +21,11 @@
             <div class="navbar-links">
                 <a href="./about.html">About</a>
                 <button class="cv-link">CV</button> 
+            </div>
+            <div class="menu" onclick="showMenu(this)">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
         </div>
         <div class="section sec1">
