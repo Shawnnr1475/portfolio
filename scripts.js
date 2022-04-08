@@ -12,3 +12,4 @@ projects.forEach(project => {
         }
     })
 });
+

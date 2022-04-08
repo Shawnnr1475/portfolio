@@ -42,6 +42,9 @@
 }
 
 @media screen and (max-width:500px) {
+  .about{
+    height: fit-content;
+  }
   .about-container{
     flex-direction: column;
     justify-content: center;

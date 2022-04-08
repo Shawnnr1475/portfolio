@@ -61,6 +61,37 @@ span{
   transform: rotate(45deg) translate(-8px,-8px);
 }
 
+.menu-options{
+  width: 100%;
+  transform: scaleY(0);
+  background-color:var(--card-color);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s;
+}
+
+.menu-links{
+  color: var(--font-color);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-links a{
+  color:var(--font-color);
+  margin-right: 30px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.8s;
+}
+.menu-links a:hover{
+  color: var(--btn-color);
+  border-bottom: 1px solid var(--btn-color);
+}
+
 .logo a{
   color:var(--font-color);
   text-decoration:none;
@@ -69,12 +100,19 @@ span{
 .navbar{
   position: fixed;
   width: 100vw;
+  height: fit-content;
   background-color: var(--bg-color);
   padding: 2rem 2rem;
   display: flex;
+  flex-direction: column;
+  z-index: 9;
+}
+
+.navbar-container{
+  width: 100%;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 99;
 }
 .navbar h2{
   font-size: 30px;
@@ -264,7 +302,7 @@ span{
 @media screen and (max-width:500px) {
   
 .cards{
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 .intro h2{
   font-size: 30px;
