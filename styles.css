@@ -298,6 +298,11 @@ span{
   height: 100vh;
 }
 
+.footer-container{
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
 
 @media screen and (max-width:500px) {
   
@@ -331,6 +336,18 @@ span{
 .page-container{
   scroll-snap-type: none;
   scroll-behavior: smooth;
+}
+
+.footer-container{
+  width: 100%;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.footer-container img{
+  width: 80px;
+  height: 80px;
 }
 
 }
